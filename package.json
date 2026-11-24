@@ -1,0 +1,23 @@
+{
+  "name": "bandwidth-hero-cloudflare",
+  "version": "1.0.0",
+  "description": "Bandwidth Hero 数据压缩服务 —— Cloudflare Workers 版（WASM 图片编解码，无需 sharp）",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "test": "node --test test/lib.test.mjs",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "@jsquash/avif": "^2.1.1",
+    "@jsquash/jpeg": "^1.4.0",
+    "@jsquash/png": "^3.1.1",
+    "@jsquash/webp": "^1.5.0",
+    "wasm-feature-detect": "^1.8.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
